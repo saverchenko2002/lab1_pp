@@ -1,2 +1,2 @@
-#Hello sensei
-#***It`s my MASTER branch***
+Hello sensei
+***It`s my DEVELOP branch***
