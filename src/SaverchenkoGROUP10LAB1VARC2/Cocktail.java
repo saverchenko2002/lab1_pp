@@ -1,12 +1,12 @@
 package SaverchenkoGROUP10LAB1VARC2;
 
-public class Cocktail extends Food{
-
+public class Cocktail extends Food
+{
     private String fruit=null;
     private String drink=null;
-    private Double calories=null;
+    private int calories=0;
 
-    public Cocktail(String fruit,String drink)
+    public Cocktail(String drink,String fruit)
     {
         super("Коктейль");
         this.fruit=fruit;
@@ -15,17 +15,17 @@ public class Cocktail extends Food{
 
     public void consume()
     {
-        System.out.println(this + " выпит");
+        System.out.print(this + " выпит");
     }
 
-    public double calculateCalories()
+    public int calculateCalories()
     {
         if (drink.equals("молочный") && fruit.equals("бананом"))
-            calories=27.50;
+            calories=10;
         else if (drink.equals("шоколадный") && fruit.equals("клубникой"))
-            calories = 36.50;
+            calories = 30;
         else if (drink.equals("виноградный") && fruit.equals("киви"))
-            calories = 29.50;
+            calories = 20;
         return calories;
     }
 

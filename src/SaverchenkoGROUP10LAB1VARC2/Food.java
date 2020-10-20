@@ -2,7 +2,7 @@ package SaverchenkoGROUP10LAB1VARC2;
 
 public abstract class Food implements Consumable, Nutritious {
 
-    private String name = null;
+    private String name;
 
     public Food(String name)
     {
